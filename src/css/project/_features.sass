@@ -1,0 +1,65 @@
+.features
+  background-color: $dark-grey-color
+  color: #fff
+
+  .container
+    &::before,
+    &::after
+      background-color: #575757
+
+.features-list
+  list-style: none
+  margin: 0
+  padding: 0
+
+  @media(min-width: 768px)
+    display: flex
+    flex-wrap: wrap
+
+  &__item
+    @media(min-width: 768px)
+      display: flex
+      width: 33.33333%
+
+    &:not(:last-child)
+      border-bottom: 1px solid #575757
+
+      @media(min-width: 768px)
+        border-bottom: none
+        border-right: 1px solid #575757
+
+.feature
+  padding-top: 40px
+  padding-left: 20px
+  padding-right: 20px
+  padding-bottom: 50px
+
+  @media(min-width: 768px)
+    display: flex
+    flex-direction: column
+    height: 100%
+    padding-left: 28px
+    padding-right: 28px
+
+  @media(min-width: 1200px)
+    padding-top: 60px
+    padding-bottom: 90px
+    padding-left: 50px
+    padding-right: 50px
+
+  &__num
+    font-size: 28px
+    font-weight: 700
+    line-height: 134%
+
+  &__title
+    font-size: 16px
+    font-weight: 700
+    line-height: 174%
+    margin-bottom: 40px
+
+    @media(min-width: 1200px)
+      margin-bottom: 45px
+
+  &__text
+    margin-top: auto

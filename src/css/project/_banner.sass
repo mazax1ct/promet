@@ -1,0 +1,107 @@
+.banner
+  color: #fff
+  background-position: 50% 50%
+  background-color: $dark-grey-color
+  background-repeat: no-repeat
+  background-size: cover
+  display: flex
+  flex-direction: column
+  min-height: 568px
+  height: 100vh
+  position: relative
+
+  &--main
+    background-image: url('../images/content/banners/main/banner_mobile.jpg')
+
+    @media(min-width: 768px) and (orientation: portrait)
+      background-image: url('../images/content/banners/main/banner_tablet.jpg')
+
+    @media(min-width: 1024px) and (orientation: landscape)
+      background-image: url('../images/content/banners/main/banner_desktop.jpg')
+
+  .container
+    display: flex
+    flex-direction: column
+    height: 100%
+    width: 100%
+
+    &::after,
+    &::before
+      background-color: $banner-line-color
+
+  &__text-block
+    font-size: 16px
+    line-height: 168%
+    margin-top: auto
+    margin-bottom: 50px
+    padding-left: 20px
+    padding-right: 20px
+
+    @media(min-width: 768px)
+      border-bottom: 1px solid $banner-line-color
+      border-top: 1px solid $banner-line-color
+      line-height: 172%
+      margin-bottom: auto
+      padding: 50px 28px
+
+    @media(min-width: 1200px)
+      padding: 40px 50px
+
+    h1
+      line-height: 130%
+      text-transform: uppercase
+
+      @media(min-width: 768px)
+        font-size: 46px
+        line-height: 121%
+
+      @media(min-width: 1200px)
+        font-size: 50px
+
+  &__text
+    max-width: 740px
+
+    &.mobile
+      @media(min-width: 768px)
+        display: none
+
+    &.desktop
+      display: none
+
+      @media(min-width: 768px)
+        display: block
+
+  &__bottom
+    display: none
+
+    @media(min-width: 768px)
+      border-top: 1px solid $banner-line-color
+      bottom: 0
+      display: block
+      left: 0
+      position: absolute
+      right: 0
+      z-index: 1
+
+  &__bottom-inner
+    align-items: center
+    display: flex
+    justify-content: space-between
+    min-height: 74px
+    margin-left: auto
+    margin-right: auto
+    max-width: 1240px
+    padding-left: 58px
+    padding-right: 58px
+
+    @media(min-width: 1200px)
+      padding-left: 80px
+      padding-right: 80px
+
+  &__copyright
+    font-size: 12px
+    margin-bottom: 0
+
+  .social-link
+    &:not(:last-child)
+      margin-right: 25px
