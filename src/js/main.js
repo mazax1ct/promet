@@ -1,3 +1,4 @@
+//открытие/закрытие главного меню
 $(document).on('click', '.js-menu-toggler', function () {
   $('body').toggleClass('overflow');
   $('.header').toggleClass('menu-open');
@@ -9,6 +10,7 @@ $(document).on('click', '.js-menu-toggler', function () {
   return false;
 });
 
+//комбобокс
 function closeCombobox(evt) {
   if (!$('.combobox__dropdown').is(evt.target) && $('.combobox__dropdown').has(evt.target).length === 0) {
     $('.combobox').removeClass('is-open');
@@ -23,5 +25,12 @@ $(document).on('click', '.combobox__button', function () {
   } else {
     document.removeEventListener('click', closeCombobox);
   }
+  return false;
+});
+
+//список ссылок в каталоге
+$(document).on('click', '.catalog-linker__button', function () {
+  $(this).parent().toggleClass('is-open');
+  $(this).next('.catalog-linker__dropdown').slideToggle();
   return false;
 });
