@@ -1,0 +1,44 @@
+.catalog-detail
+  @media(min-width: 1200px)
+    display: flex
+
+  &__left
+    @media(min-width: 1200px)
+      width: 33.33333%
+
+  &__right
+    margin-right: -30px
+    overflow-x: auto
+    position: relative
+    z-index: 1
+
+    @media(min-width: 768px)
+      margin-right: 0
+      position: static
+      z-index: auto
+
+    @media(min-width: 1200px)
+      width: 66.66666%
+
+    table
+      background-color: #fff
+      margin-bottom: 0
+      min-width: 708px
+
+      th,
+      td
+        &:last-child
+          border-right: none
+
+      td
+        width: 20%
+
+        &:first-child
+          min-width: 190px
+
+          @media(min-width: 1200px)
+            min-width: 214px
+
+    .title_2
+      left: 0
+      position: sticky

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <title>Каталог</title>
+
+  <meta name="description" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="images/favicon/site.webmanifest">
+  <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#000000">
+  <link rel="shortcut icon" href="images/favicon/favicon.ico">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-config" content="images/favicon/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+
+<body>
+  <svg aria-hidden="true" style="width: 0px; height: 0px; overflow: hidden; position: absolute;" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="logo" viewBox="0 0 129 23">
+      <g>
+        <path d="M19.5829 11.1137L17.7188 12.7464V22.1091H14.4509V3.23196H5.132V22.1091H1.86419V12.7464L0 11.1137L1.86419 9.51447V0H17.7188V9.51447L19.5829 11.1137Z"/>
+        <path d="M37.3648 7.21917V5.52727L35.4408 3.23196H29.4216V9.51447H35.4408L37.3648 7.21917ZM40.6327 8.60739L36.998 12.776H29.4216V22.1386H26.1518V12.7464L24.2876 11.1452L26.1518 9.51447V0H36.998L40.6327 4.13707V8.60739Z"/>
+        <path d="M59.4189 16.9446V5.22557L57.0962 3.23196H51.9642L49.6434 5.22557V16.9446L51.9662 18.9087H57.0981L59.4189 16.9446ZM64.5529 11.1452L62.6887 12.7464V18.4551L58.5038 22.1406H50.5605L46.3437 18.4551V12.7464L44.4795 11.1452L46.3437 9.51447V3.6855L50.5605 0H58.5038L62.6887 3.6855V9.51447L64.5529 11.1452Z"/>
+        <path d="M91.3452 11.1452L89.481 12.7464V22.1386H86.2112V5.73826L80.7741 15.8561H77.3528L71.9137 5.73826V22.1386H68.6459V12.7464L66.7817 11.1452L68.6459 9.51447V0H72.2208L79.0634 12.4743L85.9061 0H89.481V9.51447L91.3452 11.1452Z"/>
+        <path d="M109.461 22.1091H95.9272V12.7464L94.063 11.1137L95.9272 9.51447V0H109.461V3.23196H99.197V9.51447H107.108V12.7464H99.197V18.8771H109.461V22.1091Z"/>
+        <path d="M128.614 3.23196H122.109V9.54405L123.971 11.1452L122.109 12.7464V22.1386H118.839V12.7464L116.975 11.1452L118.839 9.54405V3.23196H112.301V0H128.614V3.23196Z"/>
+      </g>
+    </symbol>
+    <symbol id="phone" viewBox="0 0 15 15">
+      <path d="M14.6,11l-2.1-2.1c-0.7-0.7-2-0.4-2.3,0.5c-0.2,0.7-1,1-1.6,0.9C7,10,5,8,4.6,6.4C4.4,5.8,4.9,5,5.5,4.8c1-0.3,1.3-1.6,0.5-2.3L4,0.4c-0.6-0.5-1.5-0.5-2,0L0.5,1.8c-1.4,1.5,0.1,5.5,3.7,9c3.5,3.5,7.5,5.2,9,3.7l1.4-1.4C15.1,12.4,15.1,11.5,14.6,11z"/>
+    </symbol>
+    <symbol id="burger" viewBox="0 0 26 26">
+      <g>
+      	<rect y="4" width="26" height="2"/>
+      	<rect y="12" width="26" height="2"/>
+      	<rect y="20" width="26" height="2"/>
+      </g>
+    </symbol>
+    <symbol id="close" viewBox="0 0 26 26">
+      <g>
+      	<rect x="12.1" y="0.5" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -5.3598 12.9896)" width="1.9" height="25"/>
+      	<rect x="0.5" y="12.1" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -5.4098 13.0104)" width="25" height="1.9"/>
+      </g>
+    </symbol>
+    <symbol id="search" viewBox="0 0 18 18">
+      <g>
+      	<path d="M8,14.5c-3.9,0-7-3.1-7-7c0-3.9,3.1-7,7-7c3.9,0,7,3.1,7,7C15,11.3,11.9,14.5,8,14.5z M8,2.5c-2.7,0-5,2.2-5,5s2.2,5,5,5s5-2.2,5-5S10.7,2.5,8,2.5z"/>
+      	<rect x="12.9" y="11" transform="matrix(0.7215 -0.6924 0.6924 0.7215 -6.1005 13.6616)" width="2" height="6.7"/>
+      </g>
+    </symbol>
+    <symbol id="vk" viewBox="0 0 24 24">
+      <path d="M11.9,15.5h0.7c0,0,0.2,0,0.3-0.1C13,15.2,13,15,13,15s0-1,0.4-1.1c0.4-0.1,1,0.9,1.6,1.4c0.5,0.3,0.8,0.2,0.8,0.2l1.6,0c0,0,0.9-0.1,0.4-0.7c0-0.1-0.2-0.5-1.2-1.4c-1-0.9-0.9-0.8,0.3-2.4c0.7-1,1-1.6,1-1.9c-0.1-0.2-0.6-0.2-0.6-0.2l-1.8,0c0,0-0.1,0-0.2,0c-0.1,0.1-0.2,0.2-0.2,0.2s-0.3,0.8-0.7,1.4c-0.8,1.4-1.1,1.5-1.3,1.4c-0.3-0.2-0.2-0.8-0.2-1.2c0-1.3,0.2-1.9-0.4-2c-0.2,0-0.3-0.1-0.9-0.1c-0.7,0-1.2,0-1.5,0.2C10,8.8,9.9,9,10,9c0.1,0,0.4,0.1,0.5,0.3c0.2,0.3,0.2,0.8,0.2,0.8s0.1,1.6-0.3,1.8c-0.2,0.1-0.6-0.1-1.3-1.4C8.8,9.9,8.5,9.1,8.5,9.1S8.4,9,8.3,8.9C8.2,8.9,8,8.8,8,8.8l-1.7,0c0,0-0.3,0-0.4,0.1c-0.1,0.1,0,0.3,0,0.3s1.4,3.2,2.9,4.8C10.3,15.5,11.9,15.5,11.9,15.5z"/>
+    </symbol>
+    <symbol id="inst" viewBox="0 0 24 24">
+      <g>
+      	<path d="M9.9,6.5h4.1c1.9,0,3.4,1.5,3.4,3.4v4.1c0,1.9-1.5,3.4-3.4,3.4H9.9c-1.9,0-3.4-1.5-3.4-3.4V9.9C6.5,8,8,6.5,9.9,6.5z M7.5,14.1c0,1.3,1.1,2.4,2.4,2.4h4.1c1.3,0,2.4-1.1,2.4-2.4V9.9c0-1.3-1.1-2.4-2.4-2.4H9.9c-1.3,0-2.4,1.1-2.4,2.4V14.1z"/>
+      	<path d="M12,9.3c1.5,0,2.7,1.2,2.7,2.7c0,1.5-1.2,2.7-2.7,2.7S9.3,13.5,9.3,12C9.3,10.5,10.5,9.3,12,9.3z M12,13.7c0.9,0,1.7-0.8,1.7-1.7c0-0.9-0.8-1.7-1.7-1.7s-1.7,0.8-1.7,1.7C10.3,12.9,11.1,13.7,12,13.7z"/>
+      	<path d="M9,9.4C8.8,9.4,8.7,9.3,8.7,9c0-0.2,0.2-0.4,0.4-0.4c0.2,0,0.4,0.2,0.4,0.4C9.4,9.3,9.3,9.4,9,9.4z"/>
+      </g>
+    </symbol>
+    <symbol id="fb" viewBox="0 0 24 24">
+      <path d="M15,10.1h-2.3V8.6c0-0.4,0.3-0.8,0.8-0.8h0.8V5.9h-1.5c-1.3,0-2.3,1-2.3,2.3v1.9H9V12h1.5v6.1h2.3V12h1.5L15,10.1z"/>
+    </symbol>
+  </svg>
+
+  <div class="wrapper">
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <a class="header__logo" href="main.html">
+            <svg class="header__logo-icon" aria-hidden="true">
+              <use xlink:href="#logo" />
+            </svg>
+          </a>
+          <div class="header__dropdown-menu">
+            <nav class="header__menu">
+              <ul class="header__menu-list">
+                <li class="header__menu-item"><a class="header__menu-link" href="catalog.html">Каталог</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="contacts.html">Контакты</a></li>
+              </ul>
+            </nav>
+            <div class="header__phone-block">
+              <a class="header__phone" href="tel:+78008399999">
+                <svg class="header__phone-icon" aria-hidden="true"><use xlink:href="#phone" /></svg>
+                <span>8 (800) 839 99 99</span>
+              </a>
+              <button class="header__recall-button" type="button">Заказать звонок</button>
+            </div>
+            <p class="header__copyright">© 2020 Все права защищены.</p>
+          </div>
+          <a class="header__search-link" href="#" title="Поиск">
+            <svg class="header__search-icon" aria-hidden="true">
+              <use xlink:href="#search" />
+            </svg>
+          </a>
+          <button class=" js-menu-toggler header__menu-toggler menu-toggler" type="button" title="Меню">
+            <svg class="menu-toggler__icon" aria-hidden="true">
+              <use xlink:href="#burger" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <div class="page-content">
+      <div class="container">
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="main.html">Главная</a></li>
+          <li class="breadcrumbs__item">Каталог</li>
+        </ul>
+        <h1 class="title">Каталог</h1>
+        <section class="catalog-sections">
+          <div class="catalog-filter">
+            <div class="catalog-filter__item">
+              <p><b>Тип продукта</b></p>
+            </div>
+            <div class="catalog-filter__item">
+              <p><b>Марка стали</b></p>
+            </div>
+            <div class="catalog-filter__item">
+              <p><b>Диаметр</b></p>
+            </div>
+          </div>
+          <ul class="catalog-sections-list">
+            <li class="catalog-sections-list__item">
+              <div class="catalog-section">
+                <img class="catalog-section__image" src="images/content/types/circle.svg" alt="Круг">
+                <h3 class="catalog-section__title">Круг</h3>
+                <p class="catalog-section__text">Идейные соображения высшего порядка, а также сложившаяся</p>
+                <p><a href="#">Смотреть</a></p>
+              </div>
+            </li>
+            <li class="catalog-sections-list__item">
+              <div class="catalog-section">
+                <img class="catalog-section__image" src="images/content/types/hexagon.svg" alt="Шестигранник">
+                <h3 class="catalog-section__title">Шестигранник</h3>
+                <p class="catalog-section__text">Идейные соображения высшего порядка, а также сложившаяся</p>
+                <p><a href="#">Смотреть</a></p>
+              </div>
+            </li>
+            <li class="catalog-sections-list__item">
+              <div class="catalog-section">
+                <img class="catalog-section__image" src="images/content/types/forge.svg" alt="Поковка">
+                <h3 class="catalog-section__title">Поковка</h3>
+                <p class="catalog-section__text">Идейные соображения высшего порядка, а также сложившаяся</p>
+                <p><a href="#">Смотреть</a></p>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer__inner container">
+      <div class="footer__block">
+        <img width="158" height="84" src="images/logo-full.svg" alt="ПРОМЕТ">
+      </div>
+      <div class="footer__block">
+        <div class="footer__block-inner">
+          <div class="footer__cell">
+            <h3 class="footer__block-title">Меню</h3>
+            <ul class="footer-menu">
+              <li class="footer-menu__item"><a class="footer-menu__link" href="catalog.html">Каталог</a></li>
+              <li class="footer-menu__item"><a class="footer-menu__link" href="contacts.html">Контакты</a></li>
+            </ul>
+          </div>
+          <div class="footer__cell">
+            <h3 class="footer__block-title">Контакты</h3>
+            <p><a href="tel:+78008399933">8 (800) 839 99 33</a></p>
+            <p><a href="mailto:info@promet.ru">info@promet.ru</a></p>
+            <p>194044,<br class="mobile"> г.&nbsp;Санкт‑Петербург,<br> ул.Чугунная, дом&nbsp;20</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer__block">
+        <h3 class="footer__block-title">Социальные сети</h3>
+        <div class="social-links">
+          <a class="social-link" href="#" target="_blank" title="vk.com">
+            <svg class="social-link__icon" aria-hidden="true"><use xlink:href="#vk" /></svg>
+          </a>
+          <a class="social-link" href="#" target="_blank" title="instagram.com">
+            <svg class="social-link__icon" aria-hidden="true"><use xlink:href="#inst" /></svg>
+          </a>
+          <a class="social-link" href="#" target="_blank" title="facebook.com">
+            <svg class="social-link__icon" aria-hidden="true"><use xlink:href="#fb" /></svg>
+          </a>
+        </div>
+        <p class="footer__copyright">© 2020 Все права защищены.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

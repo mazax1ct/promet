@@ -1,0 +1,182 @@
+.contacts
+  &__top
+    @media(min-width: 768px)
+      display: flex
+
+    .title
+      @media(min-width: 768px)
+        border-bottom: none
+        width: 50%
+
+  &__full-title
+    padding: 20px
+
+    @media(min-width: 768px)
+      border-left: 1px solid $lines-color
+      padding-left: 28px
+      padding-right: 28px
+      width: 50%
+
+    @media(min-width: 1200px)
+      padding: 36px 50px
+
+    .mobile
+      display: block
+
+      @media(min-width: 1200px)
+        display: none
+
+    .desktop
+      display: none
+
+      @media(min-width: 1200px)
+        display: block
+
+  &__middle
+    margin-left: -30px
+    margin-right: -30px
+    position: relative
+    z-index: 2
+
+    @media(min-width: 768px)
+      margin-left: 0
+      margin-right: 0
+
+    &::before,
+    &::after
+      background-color: $banner-line-color
+      content: ''
+      height: 100%
+      top: 0
+      position: absolute
+      width: 1px
+
+      @media(min-width: 768px)
+        display: none
+
+    &::before
+      left: 30px
+
+    &::after
+      left: auto
+      right: 30px
+
+  &__image
+
+    img
+      height: 304px
+      max-width: initial
+      object-fit: cover
+      width: 100%
+
+      @media(min-width: 768px)
+        height: auto
+        max-width: 100%
+
+  &__contacts
+    background-color: $dark-grey-color
+    color: #fff
+
+    @media(min-width: 768px)
+      display: flex
+
+    p
+      margin-bottom: 0
+
+    a
+      color: #fff
+      text-decoration: none
+
+      &:hover,
+      &:focus
+        text-decoration: underline
+
+  &__contacts-block
+    padding: 20px 58px
+
+    @media(min-width: 768px)
+      padding-left: 28px
+      padding-right: 28px
+      width: 50%
+
+    @media(min-width: 1200px)
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      padding: 48px 50px
+
+    &:first-child
+      border-bottom: 1px solid $banner-line-color
+
+      @media(min-width: 768px)
+        border-bottom: none
+        border-right: 1px solid $banner-line-color
+
+  &__phone
+    font-size: 24px
+    font-weight: 700
+    line-height: 167%
+
+    @media(min-width: 1200px)
+      font-size: 38px
+
+  &__reqs
+    @media(min-width: 768px)
+      display: grid
+      grid-template-columns: repeat(3, 1fr)
+
+  &__reqs-block
+    border-bottom: 1px solid $lines-color
+    padding: 20px
+
+    @media(min-width: 768px)
+      font-size: 12px
+      padding: 18px 28px
+
+    @media(min-width: 1024px)
+      font-size: 14px
+
+    @media(min-width: 1200px)
+      font-size: 16px
+      padding: 30px 50px
+
+    &:last-child
+      @media(min-width: 768px)
+        min-height: 125px
+
+      @media(min-width: 1200px)
+        min-height: 160px
+
+    &:nth-child(1),
+    &:nth-child(2),
+    &:nth-child(3),
+    &:nth-child(4),
+    &:nth-child(5)
+      @media(min-width: 768px)
+        border-right: 1px solid $lines-color
+
+    &:nth-child(1)
+      @media(min-width: 768px)
+        grid-row-start: 1
+        grid-row-end: 3
+
+    &:nth-child(2)
+      @media(min-width: 768px)
+        padding-top: 10px
+        padding-bottom: 10px
+        grid-row-start: 3
+        grid-row-end: 5
+
+      @media(min-width: 1200px)
+        padding-top: 28px
+        padding-bottom: 28px
+
+    &:nth-child(4)
+      @media(min-width: 768px)
+        grid-row-start: 2
+        grid-row-end: 2
+
+    &:nth-child(5)
+      @media(min-width: 768px)
+        grid-row-start: 3
+        grid-row-end: 3

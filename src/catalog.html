@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <title>Каталог</title>
+
+  <meta name="description" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  //= template/favicon.html
+
+  //= template/style.html
+</head>
+
+<body>
+  //= template/sprite.html
+
+  <div class="wrapper">
+    //= template/header.html
+
+    <div class="page-content">
+      <div class="container">
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="main.html">Главная</a></li>
+          <li class="breadcrumbs__item">Каталог</li>
+        </ul>
+        <h1 class="title">Каталог</h1>
+        <section class="catalog-sections">
+          <div class="catalog-filter">
+            <div class="catalog-filter__item">
+              <p><b>Тип продукта</b></p>
+            </div>
+            <div class="catalog-filter__item">
+              <p><b>Марка стали</b></p>
+            </div>
+            <div class="catalog-filter__item">
+              <p><b>Диаметр</b></p>
+            </div>
+          </div>
+          <ul class="catalog-sections-list">
+            <li class="catalog-sections-list__item">
+              <div class="catalog-section">
+                <img class="catalog-section__image" src="images/content/types/circle.svg" alt="Круг">
+                <h3 class="catalog-section__title">Круг</h3>
+                <p class="catalog-section__text">Идейные соображения высшего порядка, а также сложившаяся</p>
+                <p><a href="#">Смотреть</a></p>
+              </div>
+            </li>
+            <li class="catalog-sections-list__item">
+              <div class="catalog-section">
+                <img class="catalog-section__image" src="images/content/types/hexagon.svg" alt="Шестигранник">
+                <h3 class="catalog-section__title">Шестигранник</h3>
+                <p class="catalog-section__text">Идейные соображения высшего порядка, а также сложившаяся</p>
+                <p><a href="#">Смотреть</a></p>
+              </div>
+            </li>
+            <li class="catalog-sections-list__item">
+              <div class="catalog-section">
+                <img class="catalog-section__image" src="images/content/types/forge.svg" alt="Поковка">
+                <h3 class="catalog-section__title">Поковка</h3>
+                <p class="catalog-section__text">Идейные соображения высшего порядка, а также сложившаяся</p>
+                <p><a href="#">Смотреть</a></p>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  //= template/footer.html
+
+  //= template/scripts.html
+</body>
+
+</html>
