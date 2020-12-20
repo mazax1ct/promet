@@ -1,0 +1,73 @@
+.combobox
+  min-width: 200px
+  position: relative
+
+  &::after
+    background-image: url("data:image/svg+xml,%3Csvg width='10' height='6' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 6'%3E%3Cpolygon fill='%23cccccc' points='5,5.5 0.6,1.2 1.4,0.5 5,4.1 8.6,0.5 9.4,1.2 '/%3E%3C/svg%3E")
+    background-repeat: no-repeat
+    background-position: 50% 50%
+    content: ''
+    height: 40px
+    left: auto
+    position: absolute
+    pointer-events: none
+    right: 0
+    top: 0
+    width: 40px
+    z-index: 2
+
+  &.is-open
+    &::after
+      pointer-events: auto
+      transform: rotate(-180deg)
+
+    .combobox__dropdown
+      clip: auto
+      height: auto
+      visibility: visible
+      width: calc(100% + 20px)
+
+  &__button
+    align-items: center
+    background-color: transparent
+    border: none
+    border-bottom: 1px solid $lines-color
+    color: #ccc
+    cursor: pointer
+    display: flex
+    height: 40px
+    overflow: hidden
+    padding: 0 40px 0 12px
+    text-overflow: ellipsis
+    width: 100%
+
+  &__dropdown
+    border: 1px solid $lines-color
+    background-color: #fff
+    left: -10px
+    position: absolute
+    padding-left: 10px
+    padding-right: 10px
+    top: -1px
+    height: 1px
+    overflow: hidden
+    clip: rect(0 0 0 0)
+    visibility: hidden
+    width: 1px
+    z-index: 1
+
+  &__list
+    list-style: none
+    margin: 0
+    padding: 0
+
+  &__list-item
+    &:not(:last-child)
+      border-bottom: 1px solid $lines-color
+
+  .checkbox-label
+    cursor: pointer
+    min-height: 40px
+    overflow: hidden
+    padding-right: 40px
+    text-overflow: ellipsis

@@ -1,19 +1,14 @@
 .checkbox-label,
 .radio-label
-  display: block
-  margin-bottom: 20px
-  position: relative
-  padding-left: 28px
-
-  &:last-child
-    margin-bottom: 0
+  align-items: center
+  display: flex
 
   &.disabled
     &:focus
       outline: none
 
   &:focus
-    outline: 1px dotted inherit
+    outline: 1px dotted #000
 
   input[type="checkbox"],
   input[type="radio"]
@@ -23,67 +18,48 @@
     clip: rect(0 0 0 0)
     width: 1px
 
+    &:focus ~ .checkbox-label__text,
+    &:focus ~ .radio-label__text
+      outline: 1px dotted #000
+
+  &__text
+    color: #ccc
+    cursor: pointer
+
 .checkbox-icon,
 .radio-icon
-  border: 1px solid #cecece
+  align-self: center
+  border: 1px solid $lines-color
   cursor: pointer
-  height: 22px
-  left: 0
-  line-height: 20px
-  position: absolute
-  top: 0
-  text-align: center
-  width: 22px
-
-.checkbox-icon
-  border-radius: 5px
+  height: 16px
+  margin-right: 12px
+  min-width: 16px
+  width: 16px
 
 .radio-icon
   border-radius: 50%
-  font-size: 12px
-  top: -1px
 
-input[type="checkbox"]:checked + .checkbox-icon:before
-  background-color: #000
-  border-radius: 3px
-  content: ""
-  height: 14px
-  left: 50%
-  position: absolute
-  top: 50%
-  transform: translate(-50%, -50%)
-  width: 14px
+input[type="checkbox"]:checked + .checkbox-icon
+  background-color: $dark-grey-color
+  border-color: $dark-grey-color
+  background-image: url("data:image/svg+xml,%3Csvg width='11' height='8' viewBox='0 0 11 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 3.76923L4.31579 7L10 1' stroke='white'/%3E%3C/svg%3E%0A")
+  background-position: 50% 50%
+  background-repeat: no-repeat
 
-input[type="checkbox"]:focus + .checkbox-icon,
-input[type="checkbox"]:active + .checkbox-icon
-  box-shadow: 0 0 0 2px #00d123
+input[type="checkbox"]:checked ~ .checkbox-label__text,
+input[type="radio"]:checked ~ .radio-label__text
+  color: #333
 
-input[type="radio"]:checked + .radio-icon:before
-  background-color: #000
-  border-radius: 50%
-  content: ""
-  height: 14px
-  left: 50%
-  position: absolute
-  top: 50%
-  transform: translate(-50%, -50%)
-  width: 14px
+input[type="radio"]:checked + .radio-icon
+  background-color: $dark-grey-color
 
-input[type="radio"]:focus + .radio-icon,
-input[type="radio"]:active + .radio-icon
-  box-shadow: 0 0 0 2px #00d123
-
-.checkbox-text,
-.radio-text
-  cursor: pointer
-
-input[type="checkbox"]:disabled ~ .checkbox-text,
-input[type="checkbox"].disabled ~ .checkbox-text,
-input[type="checkbox"]:disabled ~ .checkbox-icon,
-input[type="checkbox"].disabled ~ .checkbox-icon,
-input[type="radio"]:disabled ~ .radio-text,
-input[type="radio"].disabled ~ .radio-text,
-input[type="radio"]:disabled ~ .radio-icon,
-input[type="radio"].disabled ~ .radio-icon
+input[type="checkbox"]:disabled ~ .checkbox-label__text,
+input[type="checkbox"].disabled ~ .checkbox-label__text,
+input[type="checkbox"]:disabled ~ .checkbox-label__text,
+input[type="checkbox"].disabled ~ .checkbox-label__text,
+input[type="radio"]:disabled ~ .radio-label__text,
+input[type="radio"].disabled ~ .radio-label__text,
+input[type="radio"]:disabled ~ .radio-label__text,
+input[type="radio"].disabled ~ .radio-label__text
   cursor: default
   opacity: 0.5
