@@ -1,25 +1,25 @@
 .button
-  background-color: #00c220
-  border: none
-  border-radius: 5px
-  color: #fff
+  background-color: #fff
+  border: 1px solid $dark-grey-color
+  border-radius: 0
+  color: $dark-grey-color
   cursor: pointer
   display: inline-block
   font-family: inherit
   font-size: inherit
   line-height: 18px
-  padding: 11px 14px
+  padding: 15px
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s
   text-decoration: none
   text-align: center
   vertical-align: middle
 
   &:hover,
   &:active
-    background-color: #00d123
+    background-color: $dark-grey-color
     color: #fff
 
   &:focus
-    box-shadow: 0 0 5px 2px #00d123
     outline: 1px dotted #000
 
   &:disabled,
@@ -29,3 +29,12 @@
 
     &:focus
       outline: none
+
+  &--type_2
+    background-color: $dark-grey-color
+    color: #fff
+
+    &:hover,
+    &:active
+      background-color: lighten($dark-grey-color, 10%)
+      color: #fff
